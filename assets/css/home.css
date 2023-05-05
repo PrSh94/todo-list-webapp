@@ -1,0 +1,185 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    background-image: url("https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    /* background-image:linear-gradient(180deg,#a5e0e9,#489ccc); */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* main container */
+.container{
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 35vw;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    background-image:linear-gradient(90deg,#e2dcf3,  #ffffff);
+    flex-direction: column;
+    
+}
+
+.app-name{
+    border-bottom: .5px solid black;
+    padding-left: 35%;
+    font-weight: bolder;
+    color: rgb(151, 150, 150);
+    font-style: italic;
+}
+
+/* Discription box */
+.discription{
+    height: 10vh;
+    border-bottom: .5px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discription p{
+    font-weight: bolder;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+#discp-box{
+    font-size:large;
+    border-left: .5px solid black;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin-left: 10px;
+    background-image:linear-gradient(90deg,#e2dcf3,  #ffffff);
+
+}
+
+/* choose option */
+.choose{
+    border-bottom: .5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    
+}
+
+/* category option */
+.category{
+    width: 15vw;
+    height:10vh;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.category h3{
+    font-size: medium;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.sub-category{
+    width: 50%;
+    font-size: medium;
+    padding: 2px;
+    text-align: center;
+
+
+}
+
+
+/* Due date option */
+
+.due-date{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+#date{
+    margin-left: 10px;
+    border: 0;
+    color: gray;
+}
+
+
+/* action button */
+.action{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+#add_T{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(241, 30, 30);
+    color: rgb(250, 250, 250);
+}
+
+#add_T:hover{
+    background-color: rgb(4, 247, 166);
+    color: black;
+}
+
+
+/* list detals */
+
+
+.Tasks{
+    width: 100%;
+    background-image:linear-gradient(90deg,#e2dcf3,  #ffffff);
+}
+
+.items{
+    list-style: none;
+    font-size: larger;
+}
+
+.details{
+    width:30rem;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.details p{
+    margin: 10px;
+    padding: 5px;
+    border: .5px dotted black;
+    background-color: yellow;
+}
+
+
+.details h3{
+    padding: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: lighter;
+    padding: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.details h4{
+    margin: 10px;
+    color: rgb(0, 55, 128);
+    font-size: small;
+    text-decoration: underline;
+}
+
+#select-task a{
+    color: black;
+}
+
+#select-task a:hover{
+    color: rgb(255, 0, 0);
+}

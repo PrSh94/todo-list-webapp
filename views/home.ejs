@@ -1,0 +1,76 @@
+<html>
+    <head>
+         <title> <%= title %> </title>
+         <link rel="stylesheet" href="/css/home.css">
+         <script src="https://kit.fontawesome.com/048bbd020c.js" crossorigin="anonymous"></script>
+
+    </head>
+     
+    <body>
+        <form action="/create-task" method="post">
+        <div class="container">
+            <div class="app-name">
+                <h1> TODO App </h1>
+            </div>
+            <div class="discription">
+                <p> Discription</p>
+                <i class="fa-regular fa-hand-point-right"></i>
+                <input type="text" id="discp-box" name="discp" placeholder="What do you need to do?" required >
+            </div>
+            <div class="choose">
+                <div class="category">
+                    <h3>CATEGORY</h3>
+                    <select name="category" class="sub-category" >                 
+                            <option value="Personal">Personal</option>
+                            <option value="Work">Work</option>
+                            <option value="School">School</option>
+                            <option value="Tution">Tution</option>
+                            <option value="Other">Other</option>                   
+                    </select>
+                </div>
+                <div class="due-date">
+                    <h3>Due-Date &nbsp;  <i class="fa-regular fa-hand-point-right"></i> </h3>
+                    <input type="date" name="date" id="date" required >
+                </div>
+            </div>
+
+            <div class="action">
+                <div class="addTask">
+                    <button type="submit" id="add_T"> <i class="fa-solid fa-plus"></i>  Add Task</button>      
+                </div>
+
+            </div>
+
+
+            <div class="Tasks">
+                <ul>
+                    <% for ( let i of task_list) { %>
+                        <li class="items">
+                            <div class="details">
+                                <div id="select-task" >
+                                    <a href="/delete_Task/?discp=<%= i.discp%>&date=<%= i.date%>">    
+                                        <i class="fa-regular fa-trash-can fa-beat"></i>
+                                    </a>
+                                    
+                                </div>
+                                <p><%= i.category %></p>
+                                <h3><%= i.discp  %></h3>
+                                <h4><%= i.date %></h4>
+                                </div>                      
+                        </li>                                      
+                        <%}%>
+                </ul>
+        </div>
+        </div>
+        </form>
+
+
+
+    </body>
+
+
+
+
+
+
+</html>
